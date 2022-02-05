@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Social Media Dashboard Frontend Mentor challenge by Mahmoud Kamal." />
+    <title>Social Media Dashboard - Frontend Mentor</title>
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script type="application/javascript">
+      document.documentElement.dataset.theme = localStorage.theme;
+
+      window.addEventListener('DOMContentLoaded', () => {
+        const themeValue = document.querySelector('[data-theme-toggler-value]');
+
+        if (localStorage.theme === 'dark') {
+          themeValue.checked = true;
+        }
+      });
+    </script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <main class="dashboard">
+      <header class="dashboard__header">
+        <div class="dashboard__header__left">
+          <h1>Social Media Dashboard</h1>
+          <span>Total Followers: 23,004</span>
+        </div>
+
+        <div class="dashboard__header__right">
+          <label for="theme-toggler" data-theme-toggler>Dark Mode</label>
+
+          <label for="theme-toggler">
+            <input type="checkbox" id="theme-toggler" data-theme-toggler-value />
+            <span data-theme-toggler></span>
+          </label>
+        </div>
+      </header>
+
+      <ul class="dashboard__list">
+        <li>
+          <a href="#!" class="dashboard__list__item facebook">
+            <div>
+              <span class="icon"><img src="./img/icon-facebook.svg" alt="icon" /></span>
+              <span>@nathanf</span>
+            </div>
+
+            <h2>1987</h2>
+
+            <div>
+              <span class="up-arrow"><img src="./img/icon-up.svg" alt="icon" /></span>
+              <span>12 Today</span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#!" class="dashboard__list__item twitter">
+            <div>
+              <span class="icon"><img src="./img/icon-twitter.svg" alt="icon" /></span>
+              <span>@nathanf</span>
+            </div>
+
+            <h2>1044</h2>
+
+            <div>
+              <span class="up-arrow"><img src="./img/icon-up.svg" alt="icon" /></span>
+              <span>99 Today</span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#!" class="dashboard__list__item instgram">
+            <div>
+              <span class="icon"><img src="./img/icon-instagram.svg" alt="icon" /></span>
+              <span>@nathanf</span>
+            </div>
+
+            <h2>11k</h2>
+
+            <div>
+              <span class="up-arrow"><img src="./img/icon-up.svg" alt="icon" /></span>
+              <span>1099 Today</span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#!" class="dashboard__list__item youtube">
+            <div>
+              <span class="icon"><img src="./img/icon-youtube.svg" alt="icon" /></span>
+              <span>@nathanf</span>
+            </div>
+
+            <h2>8239</h2>
+
+            <div>
+              <span class="down-arrow"><img src="./img/icon-down.svg" alt="icon" /></span>
+              <span>144 Today</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <h2 class="dashboard__overview">Overview - Today</h2>
+
+      <ul class="dashboard__overview__list">
+        <li>
+          <a href="#!" class="dashboard__list__item">
+            <div>
+              <span class="icon"><img src="./img/icon-facebook.svg" alt="icon" /></span>
+              <span>Page Views</span>
+            </div>
+
+            <div>
+              <span>
+                <span class="up-arrow"><img src="./img/icon-up.svg" alt="icon" /></span>
+                <span>3%</span>
+              </span>
+
+              <h3>87</h3>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#!" class="dashboard__list__item">
+            <div>
+              <span class="icon"><img src="./img/icon-facebook.svg" alt="icon" /></span>
+              <span>Likes</span>
+            </div>
+
+            <div>
+              <span>
+                <span class="down-arrow"><img src="./img/icon-down.svg" alt="icon" /></span>
+                <span>2%</span>
+              </span>
+
+              <h3>52</h3>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#!" class="dashboard__list__item">
+            <div>
+              <span class="icon"><img src="./img/icon-instagram.svg" alt="icon" /></span>
+              <span>Likes</span>
+            </div>
+
+            <div>
+              <span>
+                <span class="up-arrow"><img src="./img/icon-up.svg" alt="icon" /></span>
+                <span>2257%</span>
+              </span>
+
+              <h3>5462</h3>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#!" class="dashboard__list__item">
+            <div>
+              <span class="icon"><img src="./img/icon-instagram.svg" alt="icon" /></span>
+              <span>Profile Views</span>
+            </div>
+
+            <div>
+              <span>
+                <span class="up-arrow"><img src="./img/icon-up.svg" alt="icon" /></span>
+                <span>1375%</span>
+              </span>
+
+              <h3>52K</h3>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#!" class="dashboard__list__item">
+            <div>
+              <span class="icon"><img src="./img/icon-twitter.svg" alt="icon" /></span>
+              <span>Retweets</span>
+            </div>
+
+            <div>
+              <span>
+                <span class="up-arrow"><img src="./img/icon-up.svg" alt="icon" /></span>
+                <span>303%</span>
+              </span>
+
+              <h3>117</h3>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#!" class="dashboard__list__item">
+            <div>
+              <span class="icon"><img src="./img/icon-twitter.svg" alt="icon" /></span>
+              <span>Likes</span>
+            </div>
+
+            <div>
+              <span>
+                <span class="up-arrow"><img src="./img/icon-up.svg" alt="icon" /></span>
+                <span>553%</span>
+              </span>
+
+              <h3>507</h3>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#!" class="dashboard__list__item">
+            <div>
+              <span class="icon"><img src="./img/icon-youtube.svg" alt="icon" /></span>
+              <span>Likes</span>
+            </div>
+
+            <div>
+              <span>
+                <span class="down-arrow"><img src="./img/icon-down.svg" alt="icon" /></span>
+                <span>19%</span>
+              </span>
+
+              <h3>107</h3>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#!" class="dashboard__list__item">
+            <div>
+              <span class="icon"><img src="./img/icon-youtube.svg" alt="icon" /></span>
+              <span>Total Views</span>
+            </div>
+
+            <div>
+              <span>
+                <span class="down-arrow"><img src="./img/icon-down.svg" alt="icon" /></span>
+                <span>12%</span>
+              </span>
+
+              <h3>1407</h3>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
