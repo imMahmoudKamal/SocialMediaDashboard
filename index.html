@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css" />
     <script type="application/javascript">
-      document.documentElement.dataset.theme = localStorage.theme;
+      localStorage.theme && (document.documentElement.dataset.theme = localStorage.theme);
 
       window.addEventListener('DOMContentLoaded', () => {
         const themeValue = document.querySelector('[data-theme-toggler-value]');
